@@ -1,0 +1,26 @@
+/* image warapper container */
+.all-p-img-wrap {
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  height: 40vh;
+  justify-content: center !important;
+  padding: 10px 30px;
+}
+
+/* card buttom margin value put it in pixel because bootstrap value is not aligning withthe design */
+.card {
+  margin-bottom: 10px;
+  border: 1px solid #dc3545 !important;
+} 
+
+/* card body radius */
+.card-body{
+  border-bottom-left-radius:5px !important;
+  border-bottom-right-radius:5px !important ;
+}
+
+/* image height 100% of the parent wrapper container */
+.all-p-img {
+  height: 100%;
+}

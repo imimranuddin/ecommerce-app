@@ -1,0 +1,35 @@
+/* image warapper container */
+.all-p-img-wrap {
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  height: 40vh;
+  justify-content: center !important;
+  padding: 40px;
+}
+
+/* crad buttom margin value put it in pixel because bootstrap value is not aligning withthe design */
+.card {
+  margin-bottom: 10px;
+  border: 1px solid #dc3545 !important;
+} 
+
+/* card body radius */
+.card-body{
+  border-bottom-left-radius:5px !important;
+  border-bottom-right-radius:5px !important ;
+}
+
+/* image height 100% of the parent wrapper container */
+.all-p-img {
+  height: 100%;
+}
+
+/* till md screen the padding between wrapper container and image is 30px so that in md and sm devices the images don't look small */
+@media screen and (max-width: 991px) { 
+  .all-p-img-wrap {
+    padding: 30px;
+  }
+}
+
+

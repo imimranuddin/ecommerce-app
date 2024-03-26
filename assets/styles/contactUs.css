@@ -1,0 +1,38 @@
+/* main container height width */
+.main-cont{
+  height: 100%;
+  width: 70%;
+}
+/* contact us left image container */
+.img-wrap-cnt-us{
+  width: 100%;
+  display: flex !important;
+  height: 45vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contact us left image */
+.img-cnt-us {
+  border-radius: 10px;
+  width:100%;
+  height: 100%;
+}
+
+/* to change bootstrap input and text are filed focus shadow */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(220, 53, 69,0.4) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.2) !important;
+  outline: 0 none !important;
+}
+
+/* page title styling */
+h1{
+  text-shadow: 2px 2px #DC3545 !important;
+}
+

@@ -1,0 +1,89 @@
+/* google font for site logo */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+
+/* logo styling */
+.navbar-brand{
+font-size: 3em !important;
+background: linear-gradient(90deg, #DC3545 0%, #9c7e95 50%, #C64149 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+}
+
+/* serchbar 50% of the parent width */
+.search-frm{
+  width: 50% !important;
+}
+
+/* serchbar height field be 45px */
+.search-bar {
+  height: 45px;
+}
+
+/* searchbar input field padding and border styling */
+.search-input {
+  border: 0;
+  padding-left: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+/* searchbar input while on focus outline should be none */
+.search-input:focus {
+  outline: none !important;
+}
+
+/* serchbar button */
+.search-btn {
+  border-radius: 0px 10px 0px 0px !important;
+  border: 0;
+  font-size: 1.3rem !important;
+}
+
+/* navbar 2 height */
+.navbar-2 {
+  height: fit-content !important;
+}
+
+/* nav items padding left */
+.nav-item {
+  padding-left: 10px;
+}
+
+/* cart icon color */
+.cart-ic {
+  color: #DC3545;
+}
+
+/* menu dropdown link background */
+.link-active-bg{
+  color: #dc3545 !important;
+}
+
+/* menu dropdown link active background */
+.link-active-bg:active{
+ color: rgb(254, 254, 254) !important;
+ background-color: #DC3545 !important;
+}
+
+/* menu dropdown link hover background */
+.link-active-bg:hover{
+  background-color: rgba(206, 81, 93,0.7) !important;
+  color: white !important;
+}
+
+/* while min width is 991px navbar 2 height should be fit content */
+@media screen and (min-width: 991px) { 
+  .navbar-2-cont {
+    height: fit-content !important;
+          
+  }
+}
+
+/* while max width is 575px serchbar should be 80% of the parent width */
+@media screen and (max-width: 575px) { 
+  .search-frm {
+      width: 80%!important;        
+  }
+
+}

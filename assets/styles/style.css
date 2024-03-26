@@ -1,0 +1,95 @@
+/* landing message container */
+.row-container {
+  min-height: 85vh;
+  min-width: 85vw;
+  position: relative;
+  background-image: url(../images/landing-page-bg-image.jpg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* used ::before pseudo element to add background color opacity to background image  */
+.row-container::before {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 100%;
+  min-width: 100%;
+  background-position: center;
+  content: "";
+  z-index: -1;
+}
+
+/* welcome message logo text styling */
+.ecom-h1 {
+  background: linear-gradient(90deg, #DC3545 0%, #482840 50%, #C64149 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px #ffffff;
+  font-size: 80px !important;
+}
+
+/* welcome message text color */
+.ecom-p{
+  color: #ffffff;
+}
+
+/* carousel inner padding  */
+.carousel-inner {
+  padding: 1em;
+}
+
+/* carousel image container */
+.cr-img-wrap {
+  display: flex;
+  width: 100%;
+  height: 45vh;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+/* carousel image  */
+.cr-img{
+  height: 100%;
+}
+
+/* carosel card margin */
+.cr-card{
+  margin: 0 0.5em;
+}
+
+/* while max width 576px welcome message logo text font size shoulbe 50px and image container height should be 45 view height */
+@media screen and (max-width: 575.98px) { 
+  .ecom-h1 {
+    font-size: 50px !important;  
+  }
+  .img-wrap {
+    height: 45vh !important;
+  }
+}
+
+/* while min-width is 576px carousel inner container display should be flex and all items display will be block and width distribution will 100/5%  */
+@media screen and (min-width: 576px) { 
+  .carousel-inner {
+    padding: 1em;
+   display: flex ;
+  }
+  .carousel-item {
+    display: block !important;
+    flex: 0 0 calc(100%/5);
+    margin-right: 0 !important;
+   }
+}
+
+/* while min-width is 576px carousel inner container display should be flex and all items display will be block and width distribution will 100/2%  */
+@media screen and (max-width: 991px) { 
+  .carousel-item {
+    display: block;
+    flex: 0 0 calc(100%/2);
+    margin-right: 0;
+   }
+}
+

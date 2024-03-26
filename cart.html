@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- page title -->
+  <title>Cart</title>
+
+  <!-- header footer CSS -->
+  <link rel="stylesheet" href="assets/styles/headerFooterStyles.css">
+
+  <!-- this page CSS -->
+  <link rel="stylesheet" href="assets/styles/cart.css">
+
+  <!-- font awesome JS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap CSS cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- header  -->
+  <div id="dynamicHeader"></div>
+  <!-- main  -->
+  <main>
+
+    <!-- main cart container -->
+    <div class="container mt-3 mb-5">
+      <!-- main cart container row (bootstrap) -->
+      <div class="row gap-3 d-flex justify-content-center ">
+
+        <!-- added cart item column -->
+        <div class="col-md-6 ps-0 pe-0">
+
+          <!-- inside the column again too a bootstrap container and row -->
+          <div class="container-fluid cart-item-cont">
+
+            <!-- row -->
+            <div class="row h-25 text-center border bg-light ctr-box-heading">
+
+              <!-- column heading  -->
+              <h1>Items in cart</h1>
+            </div>
+            <!-- added cart item row -->
+            <div class="row border">
+
+              <!-- added cart item image column -->
+              <div class="col-md-4 pt-3 pe-0 ps-0">
+
+                <!-- added cart item image container -->
+                <div class="crt-img-wrap"><img class="crt-img" src="assets/images/men/shirts/9.jpg" alt=""></div>
+              </div>
+
+              <!-- added cart item details column -->
+              <div class="col-md-4 pt-4 text-center pe-0 ps-0">
+                <h5 class="fw-bold ">Mens black shirt</h5>
+                <h5 class="pt-3 pb-3">$15</h5>
+                <i class="fa-solid fa-trash-can crt-icon"></i>
+              </div>
+
+              <!-- added cart item quantity column -->
+              <div class="col-md-4 pt-4 pe-0 ps-0 text-center pb-2">
+                <div>
+                  <span><i onclick="decrement()" class="fa-solid fa-minus crt-icon"></i>
+                 <input id="cart-qnt" type="text" class="cart-qnt-input" value="0" readonly>
+                  <i onclick="increment()" class="fa-solid fa-plus crt-icon"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cart item's price and total value column -->
+        <div class="col-md-3 ps-0 pe-0 cht-col">
+
+          <!-- inside the column again too a bootstrap container and row -->
+          <div class="container-fluid">
+            <!-- row -->
+            <div class="row h-25 text-center ctr-box-heading border bg-light">
+              <!-- column heading  -->
+              <h1>Summary</h1>
+            </div>
+
+            <!-- cart item's price and total value row -->
+            <div class="row border d-flex justify-content-center">
+              <div class="d-flex justify-content-between ps-3 pe-3 mt-3">
+                <h5>Shipping</h5>
+                <h5>$15</h5>
+              </div>
+              <div class="d-flex justify-content-between ps-3 pe-3">
+                <h5>Shipping</h5>
+                <h5>$15</h5>
+              </div>
+
+              <!-- section divider -->
+              <hr class="border-1 cht-hr">
+
+              <!-- total value container -->
+              <div class="d-flex justify-content-between ps-3 pe-3">
+                <h5>Total</h5>
+                <h5>$15</h5>
+              </div>
+
+              <!-- cart checkout button -->
+              <div class="text-center mb-3 mt-3 ">
+                <button class="btn btn-danger text-dark">
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- dynamic footer  -->
+  <div id="dynamicFooter"></div>
+
+  <!-- cart JS file -->
+  <script src="assets/scripts/cart.js"></script>
+
+  <!-- dynamic header footer JS file -->
+  <script src="assets/scripts/dynamicHeaderFooter.js"></script>
+
+  <!-- bootstrap Js file -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  </body>
+
+</body>
+
+</html>
