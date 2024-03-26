@@ -1,4 +1,4 @@
-// making the page refresh whenever the window width is below 991.98 because the below code in the same size will work perfectly otherwise the classList.remove('slide') is not working, have to refresh everytime some one changes the window width so added this event listener
+/* // making the page refresh whenever the window width is below 991.98 because the below code in the same size will work perfectly otherwise the classList.remove('slide') is not working, have to refresh everytime some one changes the window width so added this event listener
 
 // Add an event listener to detect window resize
 window.addEventListener('resize', function() {
@@ -9,7 +9,7 @@ window.addEventListener('resize', function() {
       // If condition is met, reload the page
       location.reload();
   }
-});
+}); */
 
 // Home page carousel functionality for devices with a minimum width of 576px
 if (window.matchMedia("(min-width:576px)").matches) {
